@@ -1,0 +1,149 @@
+/* Al poner el siguiente codigo, quitaremos las margenes a la pagina y tendremos el contenido mas pegado a los bordes*/
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+/* Esta parte nos ayudara a tener un tipo de letra distinto*/
+body{
+    font-family: "Arvo",serif;
+}
+/* al tener el nav como clase podemos modificar esta parte de la seccion de la pagina*/
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+.icono{
+    display: block;
+    animation: moverIzquierda;
+    z-index: 100;
+}
+header{
+    background: #dde6c7c2;  
+    background: -webkit-linear-gradient(to right, #4fbda1a8, #062aca85);
+    background: linear-gradient(to right, #0c0fb1d5, #12b603c0);     
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+/* Al tener una clase declarada en el HTML, al llamarla aqui podemos darle atributos diferentes y modificar el tipo de tamaños*/
+.facebook{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: auto;
+}
+/* Para poder darle atributos a los textos, debemos ponerle una clase en HTML, Si ponemos diferentes clase para cada tipo de texto debemo llamarla exactamente igual para no tener que modificar los demas */
+.texto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: #fff;
+}
+.texto2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: aliceblue; 
+}
+/*Esta parte de enlaces nos ayudara a darle color a la transicion de los menus 1 y 2*/
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease-in;
+    background: #3a6186;  
+    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
+    background: linear-gradient(to top, #89253e, #3a6186); 
+
+}
+.uno{
+    -webkit-clip-path: circle(0% at 0% 0%);
+    clip-path: circle(0% at 1% 1%);
+}
+
+.dos{
+    -webkit-clip-path: circle(150% at 0% 0%);
+    clip-path: circle(150% at 0% 0%);
+}
+.facebook img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #3625d6;
+    border-radius: 50%;
+    display: block;
+}
+.whatsapp img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #52b845;
+    border-radius: 40%;
+    display: block;
+}
+
+.contac{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer{
+    background: #7c35768a;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 4px solid #ccc;
+
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: #0e0404;
+    border-bottom: 3px solid #8b0be0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: #000;
+}
+.tittle-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px, 0 0 0;
+    color: #030303;
+}

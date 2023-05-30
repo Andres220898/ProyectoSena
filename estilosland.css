@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+body{ /* Damos un tipo de escritura distinto */
+    font-family: "Arvo", serif;    
+}
+/*Modificamos el menu */
+nav{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+/*Modificamos la class del menu, en HTML se llamo como a */
+nav a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 3px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0 ;
+    background-color: #e40c0c5b;
+   
+}
+
+.icono{ /*Modificamos el diseño del desplazamiento del menu2 */
+    display: block;
+    animation: moverIzquierda;
+    z-index: 100;
+}
+
+header{ /*Diseño de textos del encabezado */
+    background: #FFB75E;  
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
+    background: linear-gradient(to right, #ED8F03, #FFB75E);     
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container{ /*Diseño de la clase contenedor */
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img{ /*Diseño del tipo de imagen, forma, tamaño */
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    animation: arriba 1s ease-in;
+}
+
+.textos{ /* Modificamos la clase de textos */
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1{ /* Modificacion de tamaño de texto, en HTML se toma todos los textos de H1 */
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2{ /* Modificacion de tamaño de texto, en HTML se toma todos los textos de H2 */
+    font-size: 30px;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a{ /*Modificamos la clase de texto que en HTML llamamos a */
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 2px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0 ;
+    animation: arriba 1s ease-in;
+    background-color: #e40c0c5b;
+}
+
+.wave{ /*Diseño de las olas */
+    height: 100px;
+    width: 100%;
+    background: #FFB75E;
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E); 
+    background: linear-gradient(to right, #ED8F03, #FFB75E); 
+}
+
+.enlaces{ /*Diseño del menu2 en color */
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease-in;
+    background: #3a6186;  
+    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
+    background: linear-gradient(to top, #89253e, #3a6186); 
+
+}
+
+.uno{ /*Desplazamiento de menu 1 */
+    -webkit-clip-path: circle(0% at 0% 0%);
+    clip-path: circle(0% at 1% 1%);
+}
+
+.dos{ /*Desplazamiento de menu2 */
+    -webkit-clip-path: circle(150% at 0% 0%);
+    clip-path: circle(150% at 0% 0%);
+}
+
+footer{ /*Diseño del pie de pagina, se puede cambiar los colores */
+    background: #cf630ae0;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{ /* Ubicacion de los textos y colores */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 4px solid #ccc;
+
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{ /* diseño de los textos en tamaño H4 en HTML */
+    color: #fff;
+    border-bottom: 3px solid #eeea03;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.tittle-final{ /* Diseño del titulo final */
+    text-align: center;
+    font-size: 24px;
+    margin: 20px, 0 0 0;
+    color: #030303;
+}
+
+@keyframes moverIzquierda{ /* Diseño de movimientos */
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba{
+    0%{
+        opacity: 0;
+        transform: translatey(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

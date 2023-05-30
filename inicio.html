@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio/Appvicola</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilosl.css">
+</head>
+<body>
+    <header>
+        <!--Codigo de enlaces, aqui podemos modificar o quitar partes basicas de la pagina-->
+        <nav>
+            <a href="#" id="icono" class="icono">Menú</a>
+            <div class="enlaces uno" id="enlaces">
+                <a href="landing.html" >Home</a>
+                <a href="ubicacion.html" >Ubicacion</a>
+                <a href="QuienesSomos.html">Quienes Somos </a>
+                <a href="contacto.html" >Contacto</a> 
+            </div>
+        </nav>
+        <!--Esta es la seccion de la pagina, donde encontramos nuestro slogan-->
+        <section class="textos-header">
+            <h1>Appvicola</h1>
+            <h2>Hacemos todo mas amigable</h2>
+        </section>
+        <!--Se puede eliminar, toca validar entre todos-->
+    </header>
+    <main>
+                <!--Mostramos brevemente al cliente que ofrece la microempresa, usaremos CSS y JS para que se vea mas bonito-->
+        <section class="contenedor-sobre-nosotros">
+            <h2 class="titulo">Nuestros Productos</h2>
+            <div class="contenedor-sobre-nosotros">
+                <article>
+                    <img src="Imagenes/productos.jpg" alt="" class="imagen-about-us">
+                    <div class="contenido-textos"></div> <!--MOSTRAR ERROR AL GAES-->
+                        <h3><span>1</span> Los productos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, modi!</p>
+                    <h3><span>2</span> Los productos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, deleniti!</p>
+
+            </div>  
+        </section>
+        <!--Mostramos brevemente al cliente que ofrece la microempresa, usaremos CSS y JS para que se vea mas bonito-->
+        <section class="portafolio">
+                <div class="contenedor">
+                    <h2 class="titulo">Productos en Venta</h2>
+                    <div class="galeria-port">
+                        <div class="imagen-port">
+                            <img src="Imagenes/pechuga.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="Imagenes/clic.png" alt="">
+                                <p>Nuestros productos</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="Imagenes/alas.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="Imagenes/clic.png" alt="">
+                                <p>Nuestros productos</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="Imagenes/pierna_pernil.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="Imagenes/clic.png" alt="">
+                                <p>Nuestros productos</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="Imagenes/pescado.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="Imagenes/clic.png" alt="">
+                                <p>Nuestros productos</p>
+                            </div>
+                        </div>
+                        <div class="imagen-port">
+                            <img src="Imagenes/menudencia.jpg" alt="">
+                            <div class="hover-galeria">
+                                <img src="Imagenes/clic.png" alt="">
+                                <p>Nuestros productos</p>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </section>
+                        <!--Para el tema de que tan funcional es la pagina hacemos un espacio de encuestas o comentarios. opcional pendiente a debatir-->
+        <section class="clientes">
+            <h2 class="titulo">Opiniones de nuestros clientes</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="Imagenes/encuesta.png" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Testigo</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, voluptatibus.</p>
+                    </div>
+                </div>
+                <!--Para el tema de que tan funcional es la pagina hacemos un espacio de encuestas o comentarios. opcional pendiente a debatir-->
+                <div class="card">
+                    <img src="Imagenes/encuesta.png" alt="">
+                    <div class="contenido-texto-card">
+                        <h4>Testigo</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, quis?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Es un espacio para detallar rapida que ofrece la tienda en este caso pedidos y productos, pendiente terminar-->
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Nuestros servicios</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="Imagenes/servicios.jpg" alt="">
+                        <h3>name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, sunt.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wave">
+                <div style="height: 150px; overflow: hidden;" >
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #c9bd127c;">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!--Este es el pie de pagina donde pondremos todo acerca de nosotros como programadores-->
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>telefono</h4>
+                <p>3153262616</p>
+            </div>
+        </div>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4>gmail</h4>
+                    <p>example@algo.com</p>
+                </div>
+            </div>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>ubicacion</h4>
+                <p>la fiscala</p>
+            </div>
+        </div>
+        <div class="tittle-final"> 
+            <h2 class="tittle-final">&copy;Gaes4 Design</h2>
+        </div>
+    </footer>
+    <script src="estilosl.js"></script>
+</body>
+</html>

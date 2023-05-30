@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Arvo",serif;
+}
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+nav a{
+    color: #0c0c0c;
+    text-decoration: none;
+}
+.icono{
+    display: block;
+    animation: moverIzquierda;
+    z-index: 100;
+}
+header{
+    background: #dde6c7c2;  
+    background: -webkit-linear-gradient(to right, #a2dbcda8, #062aca85);
+    background: linear-gradient(to right, #dfcda7bd, #a497afc0);     
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+.gaes{
+    width: 95%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: auto;
+}
+img{
+    display: block;
+    height: 400px;
+    object-fit: cover;
+    animation: arriba 1s ease-in;
+    opacity:1;
+    border-radius: 10%;
+}
+.textos{
+    width: 60%;
+    color: #d35353;
+    
+
+}
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease-in;
+    background: #3a6186;  
+    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
+    background: linear-gradient(to top, #89253e, #3a6186); 
+
+}
+
+.uno{
+    -webkit-clip-path: circle(0% at 0% 0%);
+    clip-path: circle(0% at 1% 1%);
+}
+
+.dos{
+    -webkit-clip-path: circle(150% at 0% 0%);
+    clip-path: circle(150% at 0% 0%);
+}
+.cont-ubi{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    flex-direction: center;
+    
+}
+footer{
+    display: flex;
+    background: #ac33338a;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: #0e0404;
+    border-bottom: 2px solid #8b0be0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: #000;
+}
+.tittle-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px, 0 0 0;
+    color: #030303;
+}

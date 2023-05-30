@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Arvo", serif;   
+    
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+.titulo{
+    color:#ee2c2c;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    border: 2px solid #030303;
+    background-color: #ee7a1b80;
+}
+
+
+header{
+    height: 600px;
+    width: 100%;
+    background: #c2130063;  
+    background: -webkit-linear-gradient(to right, #cfb66446, #c213003d), url(Imagenes/portada.jpg);
+    background: linear-gradient(to right, #b3a36f57, #c213003d), url(Imagenes/portada.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+nav a{ /*Diseño de menu */
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 3px solid #fff;
+    width: 130px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e40c0c5b;
+}
+
+.icono{ /* Menu en el Diseño de desplazamiento del menu2 */
+    display: block;
+    animation: moverIzquierda;
+    z-index: 100;
+    
+}
+
+header .textos-header{ /*Diseño de texto enacabezado */
+    display: flex;
+    height: 530px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.textos-header h1{/*Diseño de texto enacabezado tamaño H1 segun HTML */
+    font-size: 50px;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 13%; /* Podemos dejar en px o % toca validar */
+    text-align: center;
+    background-color: #e40c0ca8;
+}
+
+.textos-header h2{/*Diseño de texto enacabezado tamaño H2 segun HTML */
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 10px; /* Podemos dejar en px o % toca validar */
+    text-align: center;
+    background-color: #e40c0ca8;
+    
+}
+
+.wave{/*Color de las olas*/
+    height: 100px;
+    width: 100%;
+    background: #5e6eff;
+    background: -webkit-linear-gradient(to right, #279b0a57, #2008aca9); 
+    background: linear-gradient(to right, #ac073ea6, #05a72e8c); 
+}
+
+.enlaces{/*Diseño de colores sacado de gradient(colores) y movimiento */
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease-in;
+    background: #3a6186;  
+    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
+    background: linear-gradient(to top, #89253e, #3a6186); 
+
+}
+.uno{ /*Primer desplazamiento*/
+    -webkit-clip-path: circle(0% at 0% 0%);
+    clip-path: circle(0% at 1% 1%);
+}
+
+.dos{ /*Segundo desplazamiento */
+    -webkit-clip-path: circle(150% at 0% 0%);
+    clip-path: circle(150% at 0% 0%);
+}
+
+.contenedor-sobre-nosotros{ /* Diseño de nuestros productos*/
+    display: flex;
+    justify-content:space-evenly;
+    background: #c5842396;
+}
+.imagen-about-us{ /*Diseño de imagen que va dentro de la clase contenedor-sobre-nosotros */
+    width: 48%;
+    border: 3px ;
+    border-radius: 10%;
+}
+
+.clientes{ /*Diseño de opiniones de clientes en fondo como section segun HTML */
+    
+    background: #c5ba2396;
+}
+
+.contenido-textos h3{ /*En comentarios de HTML deje el porque no funciona este diseño seleccionado */
+    background: #7f089c;
+    color: #8d1f1f;
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+/*.cont-textos p{ 
+    padding: 0px 0px 30px 15 px;
+    font-weight: 300 ;
+    text-align: justify;
+}*/
+
+.portafolio{ /* Color de fondo en portafolio */
+    background: #cf7a0bb2;
+
+}
+
+.galeria-port{ /*Ubicación de las imagenes en portafolio */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{ /* Estilo de imagenes de portafolio */
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 10%;
+}
+
+.imagen-port >img{ /* Ubicación de las imagenes en el contenedor */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{ /* Estilos al pasar el cursor por cada una de las imagenes */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0,7);
+    transition: transform.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hover-galeria img{ /*Tamaño de imagenes */
+    width: 50px;   
+}
+
+.hover-galeria p{ /* Color de letras de los hoover de galeria */
+    color: #fff
+}
+
+.imagen-port:hover .hover-galeria{ /*Aparicion de las imagenes hoover */
+    transform: scale(1);
+}
+
+.cards{ /*Ubicación de los comentarios de los clientes */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{ /*Fondo y ubicacion de los comentarios de los clientes */
+    background: #ac83b6;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    box-shadow: 0 0 6px 0 rgba(0,0, 0, 0.6);
+}
+
+.cards .card img{ /*Tamaño de las fotos de cada uno de los clientes que dejan comentarios */
+
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{ /* Color de letras en testigos */
+width: 60%;
+color: white;
+}
+
+.cards .card > .contenido-texto-card p{ /* capcidad de escritura */
+    font-weight: 300;
+    padding-top: 5px;
+
+}
+
+.about-services{
+    background: #813636a9;
+    padding-bottom: 30px;
+    /*border-radius: 20px;
+    transform: perspective(250px) rotateX(10deg);*/
+
+}
+
+.servicio-cont{ /*Ubicacion de la imagen del domiciliario*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio-ind{ /*Diseño de ubicación y tamaño interno del contenedor de domiciliario */
+    width: 28%;
+    text-align: center;
+
+}
+
+.servicio-ind img{ /*Estilo de imagene domiciliario*/
+    width: 90%;
+    border-radius: 20px;
+    object-fit: cover;
+    width: 100%;
+}
+.servicio-ind h3{ /*Tamaño de letra domiciliario */
+    margin: 10px 0;
+}
+
+.servicio-ind p{ /*Comentario de domiciliario */
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+footer{ /*Colores de pie de pagina */
+    display: flex;
+    background: #941010;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.content-foo{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.content-foo h4{ /*Diseño de letra de pie de pagina */
+    color: #fff;
+    border-bottom: 3px solid #e0cb0b;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{  /*Color de pie de pagina linea */
+    color: #ccc;
+}
+
+.tittle-final{ /*Estilo de copy*/
+    text-align: center;
+    font-size: 24px;
+    margin: 20px, 0 0 0;
+    color: #030303;
+}
+
+/*@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .cont-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+    
+}*/
