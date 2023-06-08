@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro/Appvicola</title>
-    <link rel="stylesheet" href="estilosingre_regis.css">
+    <link rel="stylesheet" href="estiloregis.css">
     <link rel="shortcut icon" href="Imagenes/icono.png" type="image/x-icon">
 </head>
 <body>
@@ -19,30 +19,18 @@
             </div>
         </nav>
     </header>
-    <form action=""method="POST" id="form">
-        <div class="form">
-            <h1>Registro</h1>
-            <div class="grupo">
-                <input type="text" name="" id="name"><span class="barra"></span>
-                <label for="">Nombre</label>
-            </div>
-            <div class="grupo">
-                <input type="email" name="" id="name" ><span class="barra"></span>
-                <label for="">Email</label>
-            </div>
-            <div class="grupo">
-                <input type="password" name="" id="name" ><span class="barra"></span>
-                <label for="">Password</label>
-            </div>
-            <div class="grupo">
-                <input type="number" name="" id="name" ><span class="barra"></span>
-                <label for="">Celular</label>
-            </div>
-            <p>Acepto terminos y condiciones</p>
-            <button href="landing.html"> <a href="landing.html"> Registrarse </button> </a> <br>
-            <a href="ingreso.html">Ya tengo una cuenta</a>
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" required> 
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" required>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" required>
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña"required>
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <div class="botons">
+           <a href="ingreso.html"> <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button> </a>
         </div>
-    </form>
+        <p><a href="ingreso.html">¿Ya tengo Cuenta?</a></p>
+      </section>
     <script src="estilosregis.js"></script>
 </body>
 </html>

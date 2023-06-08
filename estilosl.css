@@ -9,7 +9,7 @@ body{
     
 }
 
-.contenedor{
+.contenedor{ /* Daremos una mejor ubicacion de los items de la pagina, tienen que estar en el HTML dentro de la clase contenedor */
     padding: 60px 0;
     width: 90%;
     max-width: 1000px;
@@ -17,23 +17,23 @@ body{
     overflow: hidden;
 
 }
-.titulo{
+.titulo{ /* Usamos la clase de HTML que se nombro como titulo y le damos el estilo que queramos, se modifican todos los titulos*/
     color:#ee2c2c;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
     border-radius: 8px;
-    border: 2px solid #030303;
+    box-shadow: rgba(0, 0, 0, .5);
     background-color: #ee7a1b80;
 }
 
 
-header{
+header{ /* Daremos estilo al encabezado */
     height: 600px;
     width: 100%;
-    background: #c2130063;  
-    background: -webkit-linear-gradient(to right, #cfb66446, #c213003d), url(Imagenes/portada.jpg);
-    background: linear-gradient(to right, #b3a36f57, #c213003d), url(Imagenes/portada.jpg);
+    background: #eb1d0763;  
+    background: -webkit-linear-gradient(to right, #cfb66446, #923a303d), url(Imagenes/portada.jpg);
+    background: linear-gradient(to right, #bea25557, #f58c803d), url(Imagenes/portada.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -50,7 +50,6 @@ nav{
 nav a{ /*Diseño de menu */
     display: inline-block;
     color: #fff;
-    text-decoration: none;
     font-weight: 300;
     text-decoration: none;
     margin-top: 30px;
@@ -84,9 +83,9 @@ header .textos-header{ /*Diseño de texto enacabezado */
     font-size: 50px;
     color: #fff;
     border: 3px solid #fff;
-    border-radius: 13%; /* Podemos dejar en px o % toca validar */
+    border-radius: 13px; /* Damos un efecto de redondeo en las puntas de los cuadros */
     text-align: center;
-    background-color: #e40c0ca8;
+    background-color: #d43f3fa8;
 }
 
 .textos-header h2{/*Diseño de texto enacabezado tamaño H2 segun HTML */
@@ -94,9 +93,9 @@ header .textos-header{ /*Diseño de texto enacabezado */
     font-weight: 300;
     color: #fff;
     border: 3px solid #fff;
-    border-radius: 10px; /* Podemos dejar en px o % toca validar */
+    border-radius: 10px;
     text-align: center;
-    background-color: #e40c0ca8;
+    background-color: #ad3737a8;
     
 }
 
@@ -139,6 +138,8 @@ header .textos-header{ /*Diseño de texto enacabezado */
     display: flex;
     justify-content:space-evenly;
     background: #c5842396;
+    box-shadow: 0 0 10px rgba(7, 7, 7, 0.918);
+    border-radius: 10px;
 }
 .imagen-about-us{ /*Diseño de imagen que va dentro de la clase contenedor-sobre-nosotros */
     width: 48%;
@@ -151,26 +152,27 @@ header .textos-header{ /*Diseño de texto enacabezado */
     background: #c5ba2396;
 }
 
-.contenido-textos h3{ /*En comentarios de HTML deje el porque no funciona este diseño seleccionado */
-    background: #7f089c;
-    color: #8d1f1f;
+.contenido-textos h3{ /* Diseño los productos mas vendidos en el mes */
+    background: #c09047;
+    color: #030303;
     border-radius: 3px;
     display: inline-block;
     text-align: center;
     width: 30px;
     height: 30px;
     padding: 2px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 0 6px 0 rgba(230, 5, 5, 0.918);
     margin-right: 5px;
 }
 
-/*.cont-textos p{ 
+.contenido-textos p{ 
     padding: 0px 0px 30px 15 px;
     font-weight: 300 ;
     text-align: justify;
-}*/
+    color: #111010;
+}
 
-.portafolio{ /* Color de fondo en portafolio */
+.portafolio{ /* Color de fondo en portafolio (productos en venta)*/
     background: #cf7a0bb2;
 
 }
@@ -196,6 +198,7 @@ header .textos-header{ /*Diseño de texto enacabezado */
     height: 100%;
     object-fit: cover;
     display: block;
+    
 }
 
 .hover-galeria{ /* Estilos al pasar el cursor por cada una de las imagenes */
@@ -215,10 +218,15 @@ header .textos-header{ /*Diseño de texto enacabezado */
 
 .hover-galeria img{ /*Tamaño de imagenes */
     width: 50px;   
+    border: #020202;
+    border-radius: 50px; /*Forma de las imagenes de aparicion*/
 }
 
 .hover-galeria p{ /* Color de letras de los hoover de galeria */
-    color: #fff
+    color: #020202;
+    border: 3px solid #416397;
+    border-radius: 6px;
+    background-color: #5e6eff75;
 }
 
 .imagen-port:hover .hover-galeria{ /*Aparicion de las imagenes hoover */
@@ -231,7 +239,7 @@ header .textos-header{ /*Diseño de texto enacabezado */
 }
 
 .cards .card{ /*Fondo y ubicacion de los comentarios de los clientes */
-    background: #ac83b6;
+    background: #af904d;
     display: flex;
     width: 46%;
     height: 200px;
@@ -297,7 +305,6 @@ color: white;
     text-align: justify;
 }
 
-
 footer{ /*Colores de pie de pagina */
     display: flex;
     background: #941010;
@@ -312,7 +319,7 @@ footer{ /*Colores de pie de pagina */
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 4px solid #ccc;
 
 }
 
@@ -338,7 +345,7 @@ footer{ /*Colores de pie de pagina */
     color: #030303;
 }
 
-/*@media screen and (max-width:900px){
+@media screen and (max-width:900px){
     header{
         background-position: center;
     }
@@ -387,4 +394,4 @@ footer{ /*Colores de pie de pagina */
         margin-bottom: 60px;
     }
     
-}*/
+}

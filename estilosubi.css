@@ -13,11 +13,21 @@ nav{
     display: flex;
     justify-content: flex-start;
 }
-nav a{
-    color: #0c0c0c;
+nav a{/*Diseño de menú*/
+    display: inline-block;
+    color: #000;
     text-decoration: none;
+    font-weight: 300;
+    margin-top: 30px;
+    border: 3px solid #bd0808;
+    width: 130px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #89253e48;
 }
-.icono{
+.icono{/* Menu en el Diseño de desplazamiento del menu2 */
+    
     display: block;
     animation: moverIzquierda;
     z-index: 100;
@@ -30,7 +40,7 @@ header{
     padding: 48px;
     width: 100%;
 }
-.gaes{
+.gaes{ /* Diseño de contenedor principal*/
     width: 95%;
     max-width: 1300px;
     display: flex;
@@ -38,7 +48,7 @@ header{
     justify-content: right;
     margin: auto;
 }
-img{
+img{ /* Formato de diseño de la imagen*/
     display: block;
     height: 400px;
     object-fit: cover;
@@ -46,9 +56,13 @@ img{
     opacity:1;
     border-radius: 10%;
 }
-.textos{
+.textos{ /* Diseño de los textos  */
     width: 60%;
-    color: #d35353;
+    color: #ec0808;
+    border: solid #b11a1a;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #89253e62;
     
 
 }

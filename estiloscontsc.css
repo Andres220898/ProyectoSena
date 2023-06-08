@@ -9,18 +9,27 @@ body{
     font-family: "Arvo",serif;
 }
 /* al tener el nav como clase podemos modificar esta parte de la seccion de la pagina*/
-nav{
+nav{ 
     position: fixed;
     top: 20px;
     left: 20px;
     display: flex;
     justify-content: flex-start;
 }
-nav a{
-    color: #fff;
+nav a{ /*Diseño de menú*/
+    display: inline-block;
+    color: #ece6e6;
     text-decoration: none;
+    font-weight: 300;
+    margin-top: 30px;
+    border: 3px solid #fff;
+    width: 130px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #89253e;
 }
-.icono{
+.icono{ /* Menu en el Diseño de desplazamiento del menu2 */
     display: block;
     animation: moverIzquierda;
     z-index: 100;

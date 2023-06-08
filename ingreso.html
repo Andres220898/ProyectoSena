@@ -14,27 +14,29 @@
             <a href="#" id="icono" class="icono">Menú</a>
             <div class="enlaces uno" id="enlaces">
                 <a href="QuienesSomos.html">Quienes Somos</a>
-                <a href="inicio.html">Home</a>
+                <a href="landing.html">Inicio</a>
                 <a href="contacto.html">Contacto</a> 
             </div>
         </nav>
     </header>
-    <form action=""method="POST" id="form">
-        <div class="form">
-            <h1>ingreso</h1>
-            <div class="grupo">
-                <input type="text" name="" id="name" ><span class="barra"></span>
-                <label for="">Usuario</label>
+    <div class="contenedor">
+        <div class="central">
+            <div class="login">
+                <div class="titulo">
+                    Bienvenido
+                </div>
+                <form id="loginform">
+                    <input type="text" name="usuario" placeholder="Usuario" required>
+                    <input type="password" placeholder="Contraseña" name="password" required>
+                   <a href="inicio.html"> <button type="submit" title="Ingresar" name="Ingresar">Ingresar</button> </a> 
+                </form>
+                <div class="pie-form">
+                    <a href="#">¿Olvidaste Contraseña?</a>
+                    <a href="registro.html">¿No tienes Cuenta? Registrate</a>
+                </div>
             </div>
-            </div>
-            <div class="grupo">
-                <input type="password" name="" id="name" ><span class="barra"></span>
-                <label for="">Password</label>
-            </div>
-            <a href="landing.html"> Ingresar</a>
-            <a href="">Recuperar contraseña</a>
         </div>
-    </form>
-    <script src="estilosregis.js"></script>
+    </div>
+    <script src="estilosl.js"></script>
 </body>
 </html>
