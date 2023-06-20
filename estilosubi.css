@@ -13,18 +13,18 @@ nav{
     display: flex;
     justify-content: flex-start;
 }
-nav a{/*Diseño de menú*/
+nav a{ /*Diseño de menu */
     display: inline-block;
-    color: #000;
-    text-decoration: none;
+    color: #fff;
     font-weight: 300;
+    text-decoration: none;
     margin-top: 30px;
-    border: 3px solid #bd0808;
+    border: 3px solid #c5570d;
     width: 130px;
     border-radius: 3px;
     text-align: center;
     padding: 10px 0;
-    background-color: #89253e48;
+    background-color: #b3771d5b;
 }
 .icono{/* Menu en el Diseño de desplazamiento del menu2 */
     
@@ -32,13 +32,14 @@ nav a{/*Diseño de menú*/
     animation: moverIzquierda;
     z-index: 100;
 }
-header{
-    background: #dde6c7c2;  
-    background: -webkit-linear-gradient(to right, #a2dbcda8, #062aca85);
-    background: linear-gradient(to right, #dfcda7bd, #a497afc0);     
-    height: auto;
-    padding: 48px;
-    width: 100%;
+
+header{ /*Diseño de textos del encabezado */
+        background: #FFB75E;  
+        background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
+        background: linear-gradient(to right, #ED8F03, #FFB75E);     
+        height: auto;
+        padding: 48px;
+        width: 100%;
 }
 .gaes{ /* Diseño de contenedor principal*/
     width: 95%;
@@ -66,7 +67,7 @@ img{ /* Formato de diseño de la imagen*/
     
 
 }
-.enlaces{
+.enlaces{ /*Diseño del menu2 en color */
     position: fixed;
     display: flex;
     top: 0;
@@ -78,9 +79,9 @@ img{ /* Formato de diseño de la imagen*/
     flex-direction: column;
     width: 100%;
     transition: all 1s ease-in;
-    background: #3a6186;  
-    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
-    background: linear-gradient(to top, #89253e, #3a6186); 
+    background: #abad29;  
+    background: -webkit-linear-gradient(to top, #d38d25, #af9f09);  
+    background: linear-gradient(to top, #cc8417, #d1b226); 
 
 }
 
@@ -96,51 +97,48 @@ img{ /* Formato de diseño de la imagen*/
 .cont-ubi{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
     margin-top: 30px;
     flex-direction: center;
-    
+    border-radius: 6px;
+    border: solid #fff;
 }
-footer{
+footer{ /*Colores de pie de pagina */
     display: flex;
-    background: #ac33338a;
+    background: #941010;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
 }
-.contenedor-footer{
+
+.contenedor-footer{ /*Estilo de pie de pagina */
     display: flex;
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 4px solid #ccc;
 
 }
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
 
-}
-.content-foo{
+.content-foo{ /*Sentido de ubicacion de pie de pagina */
     text-align: center;
 }
-.content-foo h4{
-    color: #0e0404;
-    border-bottom: 2px solid #8b0be0;
+
+.content-foo h4{ /*Diseño de letra de pie de pagina */
+    color: #fff;
+    border-bottom: 3px solid #e0cb0b;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-.content-foo p{
-    color: #000;
+
+.content-foo p{  /*Color de pie de pagina linea */
+    color: #ccc;
 }
-.tittle-final{
+
+.tittle-final{ /*Estilo de copy*/
     text-align: center;
     font-size: 24px;
     margin: 20px, 0 0 0;
     color: #030303;
 }
+

@@ -27,7 +27,7 @@ nav a{ /*Diseño de menú*/
     border-radius: 3px;
     text-align: center;
     padding: 10px 0;
-    background-color: #89253e;
+    background-color: #e40c0c5b;
 }
 .icono{ /* Menu en el Diseño de desplazamiento del menu2 */
     display: block;
@@ -35,9 +35,9 @@ nav a{ /*Diseño de menú*/
     z-index: 100;
 }
 header{
-    background: #dde6c7c2;  
-    background: -webkit-linear-gradient(to right, #4fbda1a8, #062aca85);
-    background: linear-gradient(to right, #0c0fb1d5, #12b603c0);     
+    background: #FFB75E;  
+    background: -webkit-linear-gradient(to right, #ED8F03, #FFB75E);
+    background: linear-gradient(to right, #af7928, #FFB75E);     
     height: auto;
     padding: 48px;
     width: 100%;
@@ -66,7 +66,7 @@ header{
     color: aliceblue; 
 }
 /*Esta parte de enlaces nos ayudara a darle color a la transicion de los menus 1 y 2*/
-.enlaces{
+.enlaces{ /*Diseño del menu2 en color */
     position: fixed;
     display: flex;
     top: 0;
@@ -78,10 +78,9 @@ header{
     flex-direction: column;
     width: 100%;
     transition: all 1s ease-in;
-    background: #3a6186;  
-    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
-    background: linear-gradient(to top, #89253e, #3a6186); 
-
+    background: #abad29;  
+    background: -webkit-linear-gradient(to top, #d38d25, #af9f09);  
+    background: linear-gradient(to top, #cc8417, #d1b226); 
 }
 .uno{
     -webkit-clip-path: circle(0% at 0% 0%);
@@ -114,13 +113,15 @@ header{
     justify-content: space-evenly;
 }
 
-footer{
-    background: #7c35768a;
+footer{ /*Colores de pie de pagina */
+    display: flex;
+    background: #941010;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
 }
-.contenedor-footer{
+
+.contenedor-footer{ /*Estilo de pie de pagina */
     display: flex;
     width: 90%;
     justify-content: space-evenly;
@@ -129,28 +130,23 @@ footer{
     border-bottom: 4px solid #ccc;
 
 }
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
 
-}
-.content-foo{
+.content-foo{ /*Sentido de ubicacion de pie de pagina */
     text-align: center;
 }
-.content-foo h4{
-    color: #0e0404;
-    border-bottom: 3px solid #8b0be0;
+
+.content-foo h4{ /*Diseño de letra de pie de pagina */
+    color: #fff;
+    border-bottom: 3px solid #e0cb0b;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
-.content-foo p{
-    color: #000;
+
+.content-foo p{  /*Color de pie de pagina linea */
+    color: #ccc;
 }
-.tittle-final{
+
+.tittle-final{ /*Estilo de copy*/
     text-align: center;
     font-size: 24px;
     margin: 20px, 0 0 0;

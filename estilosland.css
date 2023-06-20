@@ -16,18 +16,18 @@ nav{
     justify-content: flex-start;
 }
 /*Modificamos la class del menu, en HTML se llamo como a */
-nav a{
+nav a{ /*Diseño de menu */
     display: inline-block;
     color: #fff;
     font-weight: 300;
     text-decoration: none;
     margin-top: 30px;
-    border: 3px solid #fff;
-    width: 150px;
+    border: 3px solid #c5570d;
+    width: 130px;
     border-radius: 3px;
     text-align: center;
-    padding: 10px 0 ;
-    background-color: #e40c0c5b;
+    padding: 10px 0;
+    background-color: #b3771d5b;
    
 }
 
@@ -60,6 +60,7 @@ img{ /*Diseño del tipo de imagen, forma, tamaño */
     height: 450px;
     object-fit: cover;
     animation: arriba 1s ease-in;
+    border-radius: 50px;
 }
 
 .textos{ /* Modificamos la clase de textos */
@@ -112,9 +113,9 @@ img{ /*Diseño del tipo de imagen, forma, tamaño */
     flex-direction: column;
     width: 100%;
     transition: all 1s ease-in;
-    background: #3a6186;  
-    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
-    background: linear-gradient(to top, #89253e, #3a6186); 
+    background: #abad29;  
+    background: -webkit-linear-gradient(to top, #d38d25, #af9f09);  
+    background: linear-gradient(to top, #cc8417, #d1b226); 
 
 }
 
@@ -128,14 +129,15 @@ img{ /*Diseño del tipo de imagen, forma, tamaño */
     clip-path: circle(150% at 0% 0%);
 }
 
-footer{ /*Diseño del pie de pagina, se puede cambiar los colores */
-    background: #cf630ae0;
+footer{ /*Colores de pie de pagina */
+    display: flex;
+    background: #941010;
     padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
 }
 
-.contenedor-footer{ /* Ubicacion de los textos y colores */
+.contenedor-footer{ /*Estilo de pie de pagina */
     display: flex;
     width: 90%;
     justify-content: space-evenly;
@@ -145,22 +147,22 @@ footer{ /*Diseño del pie de pagina, se puede cambiar los colores */
 
 }
 
-.content-foo{
+.content-foo{ /*Sentido de ubicacion de pie de pagina */
     text-align: center;
 }
 
-.content-foo h4{ /* diseño de los textos en tamaño H4 en HTML */
+.content-foo h4{ /*Diseño de letra de pie de pagina */
     color: #fff;
-    border-bottom: 3px solid #eeea03;
+    border-bottom: 3px solid #e0cb0b;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.content-foo p{
+.content-foo p{  /*Color de pie de pagina linea */
     color: #ccc;
 }
 
-.tittle-final{ /* Diseño del titulo final */
+.tittle-final{ /*Estilo de copy*/
     text-align: center;
     font-size: 24px;
     margin: 20px, 0 0 0;

@@ -25,11 +25,18 @@ body{
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, .5);
     background-color: #ee7a1b80;
+    align-items: center;
+    
 }
+.titulo > img{
+    height: 90%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: flex;
 
-
+}
 header{ /* Daremos estilo al encabezado */
-    height: 600px;
+    height: 500px;
     width: 100%;
     background: #eb1d0763;  
     background: -webkit-linear-gradient(to right, #cfb66446, #923a303d), url(Imagenes/portada.jpg);
@@ -53,12 +60,12 @@ nav a{ /*Diseño de menu */
     font-weight: 300;
     text-decoration: none;
     margin-top: 30px;
-    border: 3px solid #fff;
+    border: 3px solid #c5570d;
     width: 130px;
     border-radius: 3px;
     text-align: center;
     padding: 10px 0;
-    background-color: #e40c0c5b;
+    background-color: #b3771d5b;
 }
 
 .icono{ /* Menu en el Diseño de desplazamiento del menu2 */
@@ -86,6 +93,7 @@ header .textos-header{ /*Diseño de texto enacabezado */
     border-radius: 13px; /* Damos un efecto de redondeo en las puntas de los cuadros */
     text-align: center;
     background-color: #d43f3fa8;
+    
 }
 
 .textos-header h2{/*Diseño de texto enacabezado tamaño H2 segun HTML */
@@ -107,7 +115,7 @@ header .textos-header{ /*Diseño de texto enacabezado */
     background: linear-gradient(to right, #ac073ea6, #05a72e8c); 
 }
 
-.enlaces{/*Diseño de colores sacado de gradient(colores) y movimiento */
+.enlaces{ /*Diseño del menu2 en color */
     position: fixed;
     display: flex;
     top: 0;
@@ -119,9 +127,9 @@ header .textos-header{ /*Diseño de texto enacabezado */
     flex-direction: column;
     width: 100%;
     transition: all 1s ease-in;
-    background: #3a6186;  
-    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
-    background: linear-gradient(to top, #89253e, #3a6186); 
+    background: #abad29;  
+    background: -webkit-linear-gradient(to top, #d38d25, #af9f09);  
+    background: linear-gradient(to top, #cc8417, #d1b226); 
 
 }
 .uno{ /*Primer desplazamiento*/
@@ -273,8 +281,6 @@ color: white;
 .about-services{
     background: #813636a9;
     padding-bottom: 30px;
-    /*border-radius: 20px;
-    transform: perspective(250px) rotateX(10deg);*/
 
 }
 

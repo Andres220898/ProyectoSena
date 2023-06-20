@@ -135,7 +135,6 @@ nav{
     justify-content: flex-start;
 }
 
-
 nav a{ /*Diseño de menu */
     display: inline-block;
     color: #fff;
@@ -156,7 +155,7 @@ nav a{ /*Diseño de menu */
     z-index: 100;
     
 }
-.enlaces{/*Diseño de colores sacado de gradient(colores) y movimiento */
+.enlaces{ /*Diseño del menu2 en color */
     position: fixed;
     display: flex;
     top: 0;
@@ -168,9 +167,9 @@ nav a{ /*Diseño de menu */
     flex-direction: column;
     width: 100%;
     transition: all 1s ease-in;
-    background: #3a6186;  
-    background: -webkit-linear-gradient(to top, #89253e, #3a6186);  
-    background: linear-gradient(to top, #89253e, #3a6186); 
+    background: #abad29;  
+    background: -webkit-linear-gradient(to top, #d38d25, #af9f09);  
+    background: linear-gradient(to top, #cc8417, #d1b226); 
 
 }
 .uno{ /*Primer desplazamiento*/
@@ -181,4 +180,43 @@ nav a{ /*Diseño de menu */
 .dos{ /*Segundo desplazamiento */
     -webkit-clip-path: circle(150% at 0% 0%);
     clip-path: circle(150% at 0% 0%);
+}
+footer{ /*Colores de pie de pagina */
+    display: flex;
+    background: #941010;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{ /*Estilo de pie de pagina */
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 4px solid #ccc;
+
+}
+
+.content-foo{ /*Sentido de ubicacion de pie de pagina */
+    text-align: center;
+}
+
+.content-foo h4{ /*Diseño de letra de pie de pagina */
+    color: #fff;
+    border-bottom: 3px solid #e0cb0b;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{  /*Color de pie de pagina linea */
+    color: #ccc;
+}
+
+.tittle-final{ /*Estilo de copy*/
+    text-align: center;
+    font-size: 24px;
+    margin: 20px, 0 0 0;
+    color: #030303;
 }
