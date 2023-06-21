@@ -70,7 +70,9 @@ body { /*Diseño de fondo de la pagina*/
     font-family: 'Overpass', sans-serif;
     color: #d3b383;
 }
-
+.loginform{
+    border: solid #fff;
+}
 .login button {
     font-family: 'Overpass', sans-serif;
     font-size: 110%;
@@ -78,7 +80,6 @@ body { /*Diseño de fondo de la pagina*/
     width: 100%;
     height: 40px;
     border: none;
-    
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 3px 3px 3px 3px;
     -webkit-border-radius: 3px 3px 3px 3px;
